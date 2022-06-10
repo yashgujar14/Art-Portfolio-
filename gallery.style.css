@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+
+.header {
+    background-image: url(background.jpg);
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+nav {
+    display: flex;
+    padding: 3% 6%;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+nav img {
+    height: 140px;
+    width: 140px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    display: block;
+    padding: 10px 17px;
+    margin-top: 10%;
+    background-color: white;
+
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 1pxpx;
+    display: block;
+    margin: auto;
+    background: rgb(240, 232, 232);
+
+
+}
+
+.nav-links ul li a:hover {
+    color: white;
+    background-color: black;
+    
+}
+
+.nav-links ul li:hover:after {
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+
+
+
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: url(../images/contactUs.png);
+
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.sub-header h1 {
+    font-weight: 800;
+    font-size: 50px;
+    color: black;
+
+}
+
+.contact-us {
+    width: 60%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    position: relative;
+    left: 242px;
+    top: 62px;
+   
+   
+
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: black;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+ .contact-col div h3{ 
+    text-align: left;
+
+}
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+
+       .contact1 input, .contact1 textarea{
+           width: 93%;
+           padding: 11px;
+           margin-bottom: 26px;
+           outline: none;
+           border: 1px solid black;
+       }
+
+       .contact1{
+           width: 40%;
+           padding: 16px;
+           position: relative;
+           right: 81px;
+           bottom: 13px;
+           background:rgb(192, 178, 178)              
+        }
+
+       .contact1 input{
+           border-radius: 12px;
+       }
+
+
+/* footer */
+
+
+
+       footer{
+        position: absolute;
+        bottom: 830;
+        left: 0;
+        right: 0;
+        background:rgb(180, 176, 176);
+        height: auto;
+        width: 100vw;
+        font-family: "Open Sans";
+        padding-top: 20px;
+        margin-top: 40px;
+        color: #fff;
+        
+    }.footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: black;
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    .socials li{
+        margin: 0 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .socials a i{
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    
+    }
+    .socials a:hover i{
+        color:black;
+    }
+    
+    .footer-bottom{
+        background:black;
+        width: 100vw;
+        padding: 0px 0;
+        text-align: center;
+    }
+    .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        color: rgb(255, 255, 255);
+
+    }
+    .footer-bottom span{
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+
+
+
+
+
+
+nav.fa {
+    display: none;
+    /* visibility: hidden; */
+}
+/* /*----------------------------- fiixed------------------------------------  */
+.icon{ 
+   
+    position: fixed;
+    top: 70%;
+    right: 0%;
+    width: 75px;
+    display: flex;
+     flex-direction: column;
+     
+
+}
+.icon a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 22px;
+    margin: 2px;
+    text-align: left;
+    border-radius: 50px 0px 0px 50px;
+    transform: translate(130px 0%);
+    
+  
+  
+
+
+
+}
+
+
+.icon a i{
+   margin-right: 1px;
+   background-color:black;
+   height: 40px;
+   width: 40px;
+   color:white;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   border: 1px solid;
+
+
+}
+.facebook{
+
+    background-color: white ;
+    color: black;
+   
+}
+.instagram{
+    background-color: white ;
+    color: black;
+}
+.twitter{
+    background-color: white ;
+    color: black;
+} 
+
+
+
+
+
+
+
+
+
+
+
+input{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+
+}
+
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+
+
+}
+
+h1::before{
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+
+    animation: animate 4s linear infinite;
+
+}
+
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.top-content{
+    background-color: rgb(243,243, 243);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+h3{
+    height: 100%;
+    background-color: rgb(180, 176, 176);
+    line-height: 60px;
+    padding: 0 50px;
+    color:black;
+
+}
+
+label{
+    display: inline-block;
+    height: 100%;
+    /* padding: 0.5px; */
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+label:hover{
+    color: black;
+
+}
+
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+
+}
+.pic{
+    position: relative;
+    height: 220px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.pic ::before {
+    content: "Photo Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.pic ::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 ,0 ,.4);
+    transition: 0.3s;
+
+}
+.pic::after:hover{
+    height: 100%;
+}
+
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+#Check1:checked ~ .container .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 0.5s;
+
+}
+
+#Check2:checked ~ .container .photo-gallery .celebrity{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    
+}
+#Check2:checked ~ .container .photo-gallery .commercial,
+#Check2:checked ~ .container .photo-gallery .commision{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    
+}
+
+#Check3:checked ~ .container .photo-gallery .commercial{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    
+}
+#Check3:checked ~ .container .photo-gallery .celebrity,
+#Check3:checked ~ .container .photo-gallery .commision{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    
+}
+
+#Check4:checked ~ .container .photo-gallery .commision{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    
+}
+#Check4:checked ~ .container .photo-gallery .celebrity,
+#Check4:checked ~ .container .photo-gallery .commercial{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    
+}
+
